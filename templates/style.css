@@ -6,12 +6,17 @@
   text-decoration: none;
 }
 
+.content{
+  min-height: 100vh;
+}
+
 header{
   width: 100%;
   height: 50px;
-  background: black;
+  background: #182C61;
   display: block;
   position: fixed;
+  z-index: 1;
 }
 
 .mid-header{
@@ -25,18 +30,18 @@ header{
   height: 100%;
   float: left;
 }
- .logo a{
-   color: white;
-   height: 100%;
-   font-family: 'Fruktur', cursive;
-   font-size: 35px;
+
+.logo a{
+  color: white;
+  height: 100%;
+  font-family: 'Fruktur', cursive;
+  font-size: 35px;
  }
 
 .nav-links{
   height: 100%;
   float: right;
   line-height: 40px;
-
 }
 
 .nav-links a{
@@ -49,25 +54,61 @@ header{
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+
 .nav-links a:hover{
-  color: #ffb8b8;
+  color: #EAB543;
 }
 
 .nav-links a button{
   border: 2px solid white;
   height: 35px;
   width: 100px;
-  background-color: black;
+  background-color: #182C61;
   color: white;
   font-size: 16px;
 }
 
-.welcome-text{
+.welcome-page{
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 70px;
+  font-size: 60px;
+  letter-spacing: 3px;
+  top: 70px;
+  text-align: center;
+  right: 50px;
+  left: 50px;
+  font-family: 'Raleway', sans-serif;
+}
 
+footer{
+  background: #182C61;
+  padding: 60px 0;
+}
+
+.footer{
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.f-middle a {
+  color: #EAB543;
+  margin-right: 30px;
+  font-size: 35px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.f-middle p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #EAB543;
+}
+
+.border{
+  height: 2px;
+  width: 800px;
+  background: #EAB543;
 }
