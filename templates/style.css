@@ -80,9 +80,14 @@ header{
 }
 
 .welcome-button{
+  position: relative;
+  width: 600px;
+  height: 40px;
   border: 2px solid #EAB543;
   text-decoration: none;
-  padding: 10px 20px;
+  top: 300px;
+  padding: 10px;
+  margin: 100px;
   text-align: center;
   background-color:#182C61;
   color: #EAB543;
