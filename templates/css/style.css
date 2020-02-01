@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body{
+  background-color: #dfe6e9
+}
+
 .content{
   min-height: 100vh;
 }
@@ -38,7 +42,7 @@ header{
   background: #182C61;
   display: block;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mid-header{
@@ -146,6 +150,7 @@ header{
 footer{
   background: #182C61;
   padding: 60px 0;
+  z-index: 2;
 }
 
 .footer{
@@ -190,6 +195,11 @@ footer{
   margin-bottom: 85px;
 }
 
+.article:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: .5s;
+}
+
 .article img{
   width: 650px;
   height: 220px;
@@ -222,6 +232,36 @@ footer{
   color: black;
   opacity: 0.7;
   text-decoration: none;
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.article:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }
 
 .article + .article{
@@ -291,6 +331,48 @@ footer{
   opacity: 0.7;
 }
 
+.stick-links{
+  position: fixed;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.stick-links a{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 40px;
+}
+
+.facebook{
+  color: #3b5998;
+}
+
+.twitter{
+  color: #00acee;
+}
+
+.instagram{
+  color: #8a3ab9;
+}
+
+.linkedin{
+  color: #0072b1;
+}
+
+.github{
+  color: #211F1F;
+}
+
+.reddit{
+  color: #FF4301;
+}
+
+
 .about{
   width: 700px;
   height: 600px;
@@ -301,6 +383,7 @@ footer{
   margin: auto;
   top: 80px;
   margin-bottom: 100px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .about h1{
@@ -343,6 +426,7 @@ footer{
   margin: auto;
   top: 80px;
   margin-bottom: 100px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .contact h1{
@@ -400,7 +484,16 @@ footer{
   font-family: 'Raleway', sans-serif;
 }
 
-.article-form input{
+.article-form h2{
+  text-align: center;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  padding: 10px
+
+}
+
+.article-form textarea{
   font-size: 15px;
   color: #333;
   border: 2px solid #f1f1f1;
@@ -413,6 +506,10 @@ footer{
   text-align: center;
   font-size: 17px;
   font-family: 'Raleway', sans-serif;
+  max-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 40px;
 }
 
 .add-button{
