@@ -100,16 +100,16 @@ header{
 }
 
 .welcome-page{
-  position: relative;
-  top: 50%;
+  position: absolute;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%,50%);
+  transform: translate(-50%,-50%);
 }
 
 .welcome-text{
   position: relative;
   margin: auto;
-  font-size: 60px;
+  font-size: 80px;
   letter-spacing: 3px;
   top: 70px;
   text-align: center;
