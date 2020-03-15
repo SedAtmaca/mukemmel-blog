@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
@@ -152,7 +153,7 @@ header{
 
 footer{
   background: #182C61;
-  padding: 60px 0;
+  padding: 50px 0;
   z-index: 2;
 }
 
@@ -326,7 +327,7 @@ footer{
   position: relative;
   font-family: 'Raleway', sans-serif;
   top: 30px;
-  font-size: 25px;
+  font-size: 22px;
   padding: 0 30px;
   opacity: 0.7;
 }
@@ -395,10 +396,10 @@ footer{
 }
 
 .about h2{
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  text-align: center;
+  font-weight: lighter;
+  opacity: 0.9;
   padding: 0 20px;
 }
 
@@ -505,8 +506,8 @@ footer{
   height: 40px;
   text-align: center;
   font-size: 17px;
-  font-family: 'Raleway', sans-serif;
   max-height: 150px;
+  font-family: 'Raleway', sans-serif;
   max-width: 100%;
   min-width: 100%;
   min-height: 40px;
@@ -519,4 +520,85 @@ footer{
 
 .add-button:hover{
   background-position: right;
+}
+
+.comment-add{
+  border: 2px solid #dfe6e9;
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: 150px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 10px 20px;
+}
+
+.comment-add input{
+  width: 500px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #dfe6e9;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.comment-add button{
+  width: 200px;
+  height: 30px;
+  border: 2px solid #dfe6e9;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+.comment-section{
+  display: grid;
+  border: 2px solid #dfe6e9;
+  position: relative;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  background: #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 20px 0;
+}
+
+.comment-section h1, .comment-add h1{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.comment{
+  margin: auto;
+  width: 550px;
+  height: 150px;
+  background: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin-bottom: 30px;
+}
+
+.comment a{
+  font-size: 20px;
+  opacity: 0.8;
+  padding: 0 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.comment h2{
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  padding: 10px 10px;
 }
