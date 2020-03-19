@@ -11,7 +11,7 @@
 }
 
 body{
-  background-color: #dfe6e9
+  background-color: #f1f2f6;
 }
 
 .content{
@@ -467,7 +467,7 @@ footer{
 }
 
 .add-article{
-  height: 600px;
+  height: 800px;
   width: 600px;
   background: white;
   border-radius: 5px;
@@ -477,6 +477,7 @@ footer{
   margin-bottom: 100px;
   padding: 80px 40px;
   border: 2px solid #f1f1f1;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .article-form h1{
@@ -514,12 +515,9 @@ footer{
 }
 
 .add-button{
-  color: black;
-  background-image: linear-gradient(120deg,#182C61,#EAB543);
-}
-
-.add-button:hover{
-  background-position: right;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #dfe6e9;
 }
 
 .comment-add{
