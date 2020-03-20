@@ -456,8 +456,16 @@ footer{
   top: 50px;
 }
 
+.contact h4{
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+  color: black;
+}
+
 .contact a{
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
   color: black;
   opacity: 0.7;
@@ -600,4 +608,84 @@ footer{
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
   padding: 10px 10px;
+}
+
+.contact-section{
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 600px;
+  background: white;
+  border: 2px solid #dfe6e9;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  top: 80px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.inner-width{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact-section h1{
+  font-size: 25px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.name,.email,.message{
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 6px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.name{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+.message{
+  min-width: 100%;
+  max-width: 100%;
+  resize: none;
+  height: 120px;
+}
+
+.contact-section button{
+  background: none;
+  color: #182C61;
+  border: 1px solid #182C61;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.contact-section button:hover{
+  background: #182C61;
+  color: #fff;
+}
+
+.contact-section + footer{
+  margin-bottom: 100px;
 }
