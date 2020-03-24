@@ -1,39 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+var n = localStorage.getItem('on_load_counter');
 
-<head>
-  <meta charset="utf-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-</head>
+if (n === null) {
+    n = 0;
+}
 
-<body>
-  <div class="content">
-    <header>
-      <script type="text/javascript" src="fundamentals/header.js"></script>
-    </header>
+n++;
 
-<br><br><br><br><br><br><br><br><br><br><br>
+localStorage.setItem("on_load_counter", n);
 
-  <div class="editor">
+document.getElementById('CounterVisitor').innerHTML = n;
 
-  </div>
-    <!-- CKEDITOR Bölümü -->
-    <textarea name="editor"></textarea>
-    <script>
-        CKEDITOR.replace( 'editor' );
-    </script>
-    <!-- CKEDITOR Bölümü -->
-  </div>
+
+<div id="CounterVisitor">
 
 </div>
-
-  <footer>
-    <script type="text/javascript" src="fundamentals/footer.js"></script>
-  </footer>
-
-</body>
-
-</html>
