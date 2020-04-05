@@ -100,25 +100,37 @@ header{
   font-family: 'Comfortaa', cursive;
 }
 
-.welcome-page{
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.main-page-content{
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .welcome-text{
-  position: relative;
-  margin: auto;
-  font-size: 80px;
-  letter-spacing: 3px;
-  top: 70px;
-  text-align: center;
   font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  letter-spacing: 3px;
+  text-align: center;
   color: white;
-  animation: opacity 4s;
 }
+
+.welcome-text p{
+  margin-bottom: 30px;;
+}
+
+.welcome-text a{
+  font-size: 30px;
+  color: #EAB543;
+}
+
 
 @keyframes opacity {
   0%{
@@ -132,24 +144,64 @@ header{
 }
 
 .welcome-button{
-  position: relative;
-  padding: 15px 40px;
-  border: 2px solid #EAB543;
+  padding: 15px 30px;
+  border-bottom: 2px solid #EAB543;
   text-decoration: none;
-  top: 100px;
   text-align: center;
-  background-color:#182C61;
   color: #EAB543;
   font-family: 'Comfortaa', cursive;
-  transition: .5s;
   border-radius: 3px;
+  font-size: 25px;
+  transition: .5s;
 }
 
 .welcome-button:hover{
   background-color: #EAB543;
-  border: 2px solid #182C61;
-  color: #182C61;
-  font-size: 18px;
+  color: white;
+}
+
+.clear{
+  clear: both;
+}
+
+.login-buttons{
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 500px;
+  background-color: #192a56;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.login-buttons a{
+  transition: .5s;
+}
+
+.login-buttons:hover{
+  height: 70px;
+  width: 550px;
+}
+
+.login-buttons a:hover{
+  background-color: #EAB543;
+  color: white;
+}
+
+.login-buttons a{
+  padding: 15px 30px;
+  border-bottom: 2px solid #EAB543;
+  text-decoration: none;
+  text-align: center;
+  color: #EAB543;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 20px;
 }
 
 footer{
@@ -476,15 +528,15 @@ footer{
 }
 
 .add-article{
-  height: 800px;
-  width: 600px;
+  width: 700px;
+  height: 600px;
   background: white;
   border-radius: 5px;
   position: relative;
   margin: auto;
   top: 90px;
   margin-bottom: 100px;
-  padding: 80px 40px;
+  padding: 40px 40px;
   border: 2px solid #f1f1f1;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -495,17 +547,7 @@ footer{
   font-family: 'Raleway', sans-serif;
 }
 
-.article-form h2{
-  text-align: center;
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  padding: 10px
-
-}
-
 .article-form textarea{
-  font-size: 15px;
   color: #333;
   border: 2px solid #f1f1f1;
   border-radius: 5px;
@@ -516,16 +558,19 @@ footer{
   height: 40px;
   text-align: center;
   font-size: 17px;
-  max-height: 150px;
   font-family: 'Raleway', sans-serif;
-  max-width: 100%;
-  min-width: 100%;
-  min-height: 40px;
+  resize: none;
+  margin: 10px 0;
 }
 
 .add-button{
+  position: absolute;
+  left: 200px;
+  bottom: 20px;
+  margin: auto;
   width: 300px;
   height: 50px;
+  border-radius: 5px;
   border: 2px solid #dfe6e9;
 }
 
@@ -691,67 +736,14 @@ footer{
   margin-bottom: 100px;
 }
 
-/******************************************************** Particle.js ********************************************************/
-
-/* ---- reset ---- */
-
-body {
-  margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
+#vantajs{
+  height: 100vh;
 }
 
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
+.ckeditor{
   width: 100%;
-  height: 100%;
-  background-color: #182C61;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  outline: none;
+  background: none;
+  height: 40px;
+  font-family: 'Raleway', sans-serif;
 }
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-/******************************************************** Particle.js ********************************************************/

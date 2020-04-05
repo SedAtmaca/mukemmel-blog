@@ -5,40 +5,52 @@
   <meta charset="utf-8">
   <title>Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+  <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
-<body id="particle-js">
-  <div class="content">
-    <header>
-      <script type="text/javascript" src="fundamentals/header.js"></script>
-    </header>
+<body id="welcome-page">
 
+  <!--VANTA.JS-->
+    <script>
+      VANTA.WAVES({
+      el: "#welcome-page",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 0.75,
+      scaleMobile: 1.00,
+      color: 0x182c61
+    });
+    </script>
+  <!--VANTA.JS-->
+  <div class="main-page-content">
 
-    <div class="welcome-page">
-      <div class="welcome-text">Welcome to OurMood<br><span style="color:#EAB543;">SedAtmaca</span> & <span style="color:#EAB543;">CosmicOwl</span><br><span style=" font-size: 40px;">"We are writing about everything!"</span></div>
-      <center><a href="article.html" class="welcome-button">Get Started!</a></center>
-    </div>
-
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-
-    <!-- scripts -->
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-
+  <div class="login-buttons">
+    <a href="/login">Sign In</a>
+    <a href="/register">Sign Up</a>
   </div>
 
-  <!-- particles.js container -->
 
+  <div class="welcome-text">
+    <a href="about.html" style="float:left;"><i class="fas fa-user-circle"></i> SedAtmaca</a>
+    <a href="about.html" style="float:right;"><i class="fas fa-user-circle"></i> CosmicOwl</a>
 
-  <!-- scripts -->
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
+    <div class="clear"></div>
 
-  <footer>
-    <script type="text/javascript" src="fundamentals/footer.js"></script>
-  </footer>
+    <p>Welcome to OurMood</p>
+    <p style="font-size: 40px;">"We're writing everything"</p>
+
+    <div class="border"></div>
+
+    <a href="articles.html" class="welcome-button">Articles</a>
+    <a href="about.html" class="welcome-button">About</a>
+    <a href="contact.html" class="welcome-button">Contact</a>
+  </div>
+  </div>
+
 
 </body>
 

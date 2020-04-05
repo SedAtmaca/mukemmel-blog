@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <style media="screen">
-  div {
-width: 600px; height: 360px; margin-bottom: 10px;
-}
-  </style>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="css/try.css">
+  </head>
 
-</head>
-<body>
+  <body>
 
-  <div id="element"> </div>
-<div id="element2"> </div>
-  <script>
-  // example 1
-  VANTA.WAVES('#element')
+    <div class="editor">
+      <div class="editor-menubar">
+        <button class="editor-button" data-attribute="bold">Bold</button>
+        <button class="editor-button" data-attribute="italic">Italic</button>
+        <button class="editor-button" data-attribute="underline">Underline</button>
+        <button class="editor-button" data-attribute="justifyleft">Left</button>
+        <button class="editor-button" data-attribute="justifycenter">Right</button>
+      </div>
 
-  // example 2
-  VANTA.WAVES({
-    el: '#element2',
-    color: 0x111111,
-    waveHeight: 20,
-    shininess: 50,
-    waveSpeed: 1.5,
-    zoom: 0.75
-  })
-  </script>
+      <div class="editor-canvas" id="canvas" contenteditable></div>
 
+    </div>
 
-</body>
+    <script type="text/javascript">
+      const editorButtons = document.getElementsByClassName('editor-button');
+      const editorCanvas = document.getElementById('canvas');
+      const setAttribute = (element) => {
+        document.execCommand(element.dataset.attribute, false);
+      };
+
+      for (let i = 0; i < editorButtons.length; i++) {
+        editorButtons[i].addEventListener('click', function() {
+          setAttribute(this);
+
+        });
+      }
+
+    </script>
+
+  </body>
 </html>
