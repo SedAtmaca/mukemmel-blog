@@ -1,2 +1,1 @@
-Cemil Sedat Atmaca ve İftihar Muhammet Çırçır' ın ortaklaşa hazırladığı blog projesi... Umarim begenirsiniz.
-Henüz tamamlanmamış olup ileride daha fazla içerik eklenecektir. Takipte kalın...
+Flask kullanan küçük bir blog projesi http://ourmood.pythonanywhere.com
